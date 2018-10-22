@@ -1,0 +1,68 @@
+nvaldebenito@localhost E1CP1A1]$ git status
+En la rama master
+Tu rama está actualizada con 'origin/master'.
+
+nada para hacer commit, el árbol de trabajo esta limpio
+[nvaldebenito@localhost E1CP1A1]$ ^C
+[nvaldebenito@localhost E1CP1A1]$  cd /home/nvaldebenito/Documentos/fullstack/01_week/week01/E1CP1A1/01
+[nvaldebenito@localhost 01]$ cd ..
+[nvaldebenito@localhost E1CP1A1]$ touch test.txt
+[nvaldebenito@localhost E1CP1A1]$ git status
+En la rama master
+Tu rama está actualizada con 'origin/master'.
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que se será confirmado)
+
+        test.txt
+
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+[nvaldebenito@localhost E1CP1A1]$ git add test.txt 
+[nvaldebenito@localhost E1CP1A1]$ git commit -m "add test"
+[master 0f60b5c] add test
+ Committer: nvaldebenito <nvaldebenito@localhost.localdomain>
+Tu nombre y correo fueron configurados automáticamente basados
+en tu usuario y nombre de host. Por favor verifica que son correctos.
+Tu puedes suprimir este mensaje configurándolos de forma explicita. Ejecuta el 
+siguiente comando y sigue las instrucciones de tu editor
+ para modificar tu archivo de configuración:
+
+    git config --global --edit
+
+Tras hacer esto, puedes arreglar la identidad usada para este commit con:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test.txt
+[nvaldebenito@localhost E1CP1A1]$ git push -u origin master
+^Z
+[1]+  Detenido                git push -u origin master
+[nvaldebenito@localhost E1CP1A1]$ git remote -v
+origin  https://github.com/DesafioLatam/E1CP1A1.git (fetch)
+origin  https://github.com/DesafioLatam/E1CP1A1.git (push)
+[nvaldebenito@localhost E1CP1A1]$ git rm remote origin
+fatal: ruta especificada 'remote' no concordó con ninguna carpeta
+[nvaldebenito@localhost E1CP1A1]$ git remote rm origin
+[nvaldebenito@localhost E1CP1A1]$ git remote -v
+[nvaldebenito@localhost E1CP1A1]$ git remote add git@github.com:NANCYVALDEBENITO/E1CP1A1.git origin
+fatal: 'git@github.com:NANCYVALDEBENITO/E1CP1A1.git' no es un nombre remoto válido
+[nvaldebenito@localhost E1CP1A1]$ git remote add origin git@github.com:NANCYVALDEBENITO/E1CP1A1.git
+[nvaldebenito@localhost E1CP1A1]$ git remote -v
+origin  git@github.com:NANCYVALDEBENITO/E1CP1A1.git (fetch)
+origin  git@github.com:NANCYVALDEBENITO/E1CP1A1.git (push)
+[nvaldebenito@localhost E1CP1A1]$ git push -u origin master
+Contando objetos: 3, listo.
+Delta compression using up to 8 threads.
+Comprimiendo objetos: 100% (2/2), listo.
+Escribiendo objetos: 100% (3/3), 272 bytes | 272.00 KiB/s, listo.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:NANCYVALDEBENITO/E1CP1A1.git
+   56ec425..0f60b5c  master -> master
+Rama 'master' configurada para hacer seguimiento a la rama remota 'master' de 'origin'.
+[nvaldebenito@localhost E1CP1A1]$ ^C
+[nvaldebenito@localhost E1CP1A1]$  cd /home/nvaldebenito/Documentos/fullstack/01_week/week01/E1CP1A1/01
+[nvaldebenito@localhost 01]$ ^C
+[nvaldebenito@localhost 01]$  cd /home/nvaldebenito/Documentos/fullstack/01_week/week01/E1CP1A1
+[nvaldebenito@localhost E1CP1A1]$ 
